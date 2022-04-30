@@ -729,9 +729,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
+/* .contact {
   padding-bottom: 130px;
-}
+} */
 .contact .info {
   padding: 30px;
   background: #fff;
@@ -975,109 +975,130 @@ section {
     flex-direction: column;
   }
 }
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap");
+/*
+    Auther: Abdelrhman Said
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 
-.button {
-	float: left;
-	width: 60px;
-	height: 60px;
-	cursor: pointer;
-	background: #fff;
-	overflow: hidden;
-	border-radius: 50px;
-	transition: all 0.3s ease-in-out;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+.wrapper {
+  display: flex;
+  list-style: none;
+  
 }
 
-.button span {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 60px;
-	margin-left: 10px;
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 3px;
+  width: 47px;
+  height: 47px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+ol, ul {
+  padding-left: 0;
 }
 
-.button:hover {
-	width: 200px;
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.button:nth-child(1):hover .icon {
-	background: #e1306c;
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.button:nth-child(2):hover .icon {
-	background: #4267b2;
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
-.button:nth-child(3):hover .icon {
-	background: #1da1f2;
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.button:nth-child(4):hover .icon {
-	background: #0e76a8;
+.wrapper .codechef:hover,
+.wrapper .codechef:hover .tooltip,
+.wrapper .codechef:hover .tooltip::before {
+  background: #5B4638;
+  color: #ffffff;
 }
 
-.button:nth-child(5):hover .icon {
-	background: #ff0000;
+.wrapper .codeforces:hover,
+.wrapper .codeforces:hover .tooltip,
+.wrapper .codeforces:hover .tooltip::before {
+  background: #1F8ACB;
+  color: #ffffff;
 }
 
-.button:nth-child(6):hover .icon {
-	background: #333;
+.wrapper .atcoder:hover,
+.wrapper .atcoder:hover .tooltip,
+.wrapper .atcoder:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
 }
 
-.button:nth-child(1) span {
-	color: #e1306c;
+.wrapper .leetcode:hover,
+.wrapper .leetcode:hover .tooltip,
+.wrapper .leetcode:hover .tooltip::before {
+  background: #FFA116;
+  color: #ffffff;
 }
 
-.button:nth-child(2) span {
-	color: #4267b2;
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
 }
 
-.button:nth-child(3) span {
-	color: #1da1f2;
-}
-
-.button:nth-child(4) span {
-	color: #0e76a8;
-}
-
-.button:nth-child(5) span {
-	color: #ff0000;
-}
-
-.button:nth-child(6) span {
-	color: #333;
-}
-
-.button .icon {
-	width: 60px;
-	height: 60px;
-	text-align: center;
-	border-radius: 50px;
-	display: inline-block;
-	transition: all 0.3s ease-in-out;
-}
-
-.button .icon i {
-	font-size: 25px;
-	line-height: 60px;
-	transition: all 0.3s ease-in-out;
-}
-
-.button:hover i {
-	color: #fff;
-}
 .icons{
   
 	display: grid;
 	place-items: center;
-	background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+	/* background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
 }
