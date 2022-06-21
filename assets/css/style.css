@@ -585,6 +585,7 @@ section {
   list-style: none;
   padding: 0;
   font-size: 15px;
+  list-style-type: disc;
 }
 .portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
