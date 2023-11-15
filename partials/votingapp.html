@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Aman Tamboli: Devpos Projects</title>
+  <title>Aman Tamboli: Voting App With K8s</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,36 +35,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <style>
-    .ani {
-      font-family: 'Arial', sans-serif;
-      text-decoration: none;
-      /* font-size: 24px; */
-      color: rgb(0, 9, 47)3);
-      /* Darker color */
-      position: relative;
-      animation: blink 2s infinite;
-      /* Slower animation */
-    }
-
-    .ani:hover {
-      animation: none;
-      /* Stop the animation on hover */
-    }
-
-    @keyframes blink {
-
-      0%,
-      100% {
-        opacity: 0.3;
-        /* Slightly visible */
-      }
-
-      50% {
-        opacity: 1;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -111,9 +81,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Devpos Projects</h2>
-           
-
+          <h2>Cloud-Native Web Voting Application with Kubernetes</h2>
+          <ol>
+            <li><a href="https://github.com/amantamboli/K8s-voting-app">View GitHub</a></li>
+            
+          </ol>
         </div>
 
       </div>
@@ -121,40 +93,62 @@
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
+      
       <div class="container">
+        <div class="row gy-4">
 
+          <div class="col-lg">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
 
-        <div class="col-lg">
+                <div class="swiper-slide">
+                  <img src="" alt="">
+                </div>
 
-          <div class="portfolio-info">
-            <h3>Devpos Projects</h3>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
 
-            <ol>
-              <li>A streamlined CI/CD pipeline orchestrated with Jenkins, Docker, Argo CD, and Kubernetes for a
-                monitoring
-                app developed using Flask. <a class="ani" href="cicd.html">Click Here To See Details</a></li>
-              <li>Kubernetes project that involved developing a monitoring application using Flask and Psutil. Docker
-                was
-                utilized for containerization, and the application was deployed using Amazon EKS.<a class="ani"
-                  href="">Click Here To See Details</a> </li>
-              <li>Kubernetes project for deploying an application featuring a React frontend (compiled within a
-                container), a Golang API(compiled within a container) and MongoDB as the database with a replicaset configuration.<a class="ani" href="votingapp.html">Click Here To See Details</a></li>
-              <li> Docker project that involved containerizing the application using Docker. The frontend was developed
-                using
-                HTML, CSS, and JavaScript, while the backend utilized Node.js with Express and MongoDB. All components
-                were Docker-based.<a class="ani" href="">Click Here To See Details</a></li>
-              <li> DevOps project that employed Terraform and AWS Cloud to establish fully automated website hosting.<a
-                  class="ani" href="">Click Here To See Details</a></li>
-            </ol>
+          <div class="col-lg-4">
+            <div class="portfolio-description">
+              <h2>Introdcution</h2>
+              <p>
+                The Cloud-Native Web Voting Application is a modern, scalable, and secure solution that enables users to cast votes for their preferred programming language through a web interface. Leveraging Kubernetes for orchestration and management, the application ensures high availability, scalability, and efficient resource utilization.
+
+              </p>
+            </div>
+
 
           </div>
 
+        </div>
+        <div class="row gy-4">
+          <div class="portfolio-info">
+            <h3>Technical Stack:</h3>
+            <ol>
+              <li><strong> Frontend</strong>: The frontend is developed using React and JavaScript, offering a responsive and intuitive interface for users to easily participate in the voting process.</li>
+              <li><strong> Backend and API</strong>: Powered by Go (Golang), the backend serves as the API handling user voting requests. MongoDB is employed as the database backend, configured with a replica set for data redundancy and high availability.</li>
+              </ol>
+
+            <h3>Kubernetes Resources:</h3>
+            <p>To streamline deployment and management, the project utilizes various Kubernetes resources:</p>
+            <ol>
+              <li><strong> Namespace</strong>: Kubernetes namespaces provide isolated environments for different components, ensuring organization and separation of concerns within the application.</li>
+              <li><strong> Secrets</strong>: Kubernetes secrets securely store sensitive information, such as API keys and credentials, required by the application.</li>
+              <li><strong>Deployment </strong>: Kubernetes deployments define the number of instances of the application, offering instructions for updates and scaling, ensuring a smooth and controlled deployment process.</li>
+              <li><strong>Service </strong>: Kubernetes services facilitate user access to the application by directing incoming traffic to the appropriate instances, ensuring a seamless user experience.</li>
+              <li><strong> StatefulSet</strong>: For components requiring statefulness, such as the MongoDB replica set, Kubernetes StatefulSets are employed to maintain order and unique identities, ensuring data consistency and integrity.</li>
+              <li><strong>PersistentVolume and PersistentVolumeClaim </strong>: These Kubernetes resources efficiently manage the storage required for the application, ensuring data persistence and scalability as the application grows.</li>
+              </ol>
+          </div>
         </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
