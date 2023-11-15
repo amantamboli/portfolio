@@ -110,7 +110,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="" alt="">
+                  <img src="../assets/img/devpos/monitoring.png" alt="">
                 </div>
 
               </div>
@@ -136,36 +136,36 @@
             <h3>Technical Stack:</h3>
             <ol>
               <li><strong> Part 1: Deploying the Flask application locally</strong>
-                <ul class="mar">
+                <ol class="mar">
                     <li><strong>Step 1: Clone the code</strong>: Clone the code from the repository</li>
                     <li><strong>Step 2: Install dependencies</strong>: The application uses the psutil and Flask, Plotly, boto3 libraries. Install them using pip</li>
                     <li><strong>Step 3: Run the application</strong>To run the application, navigate to the root directory of the project and execute the following command: <code>python3 app.py</code></li>
-                </ul> 
+                </ol> 
             </li>
               <li><strong> Part 2: Dockerizing the Flask application</strong>
-                <ul>
+                <ol class="mar">
                     <li><strong>Step 1: Create a Dockerfile</strong>: Create a Dockerfile in the root directory for app.py</li>
                     <li><strong>Step 2: Build the Docker image</strong>:To build the Docker image, execute the following command: <code>docker run -p 5000:5000 <image_name></image_name></code></li>
                     <li><strong>Step 3: Run the Docker container</strong></li>
-                </ul> 
+                </ol> 
             </li>
             </li>
               <li><strong> Part 3: Pushing the Docker image to ECR</strong>
-                <ul>
+                <ol class="mar">
                     <li><strong>Step 1: Create an ECR repository</strong>: Create an ECR repository using ecr.py</li>
                     <li><strong> Step 2: Push the Docker image to ECR </strong>: Push the Docker image to ECR using the push commands on the console: <code>docker push <ecr_repo_uri>:<tag></tag></code></li>
-                </ul> 
+                </ol> 
             </li>
             </li>
               <li><strong>Part 4: Creating an EKS cluster and deploying the app using Python </strong>
-                <ul>
+                <ol class="mar">
                     <li><strong>Step 1: Create an EKS cluster</strong>: Create an EKS cluster and add node group</li>
                     <li><strong>Step 2: Create a node group</strong>: Create a node group in the EKS cluster.</li>
                     <li><strong>Step 3: Create deployment and service</strong> Once you run this file by running “python3 eks.py” deployment and service will be created.
                         Check by running following commands: <code>kubectl get deployment -n default (check deployments)
                             <br>kubectl get service -n default (check service)
                            <br> kubectl get pods -n default (to check the pods)</code></li>
-                </ul> 
+                </ol> 
             </li>
              
 
