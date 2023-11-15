@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinking Animation</title>
+    <style>
+       
+
+        .ani {
+            font-family: 'Arial', sans-serif;
+            text-decoration: none;
+            font-size: 24px;
+            color: #2c3e50; /* Darker color */
+            position: relative;
+            animation: blink 2s infinite; /* Slower animation */
+        }
+
+        .ani:hover {
+            animation: none; /* Stop the animation on hover */
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0.3; /* Slightly visible */
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="ani" href="#">Your Text Here</a>
+</body>
+</html>
