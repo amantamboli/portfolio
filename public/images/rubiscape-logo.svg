@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Rubiscape colored data-block grid logo -->
+  <!-- Row 1 -->
+  <rect x="4"  y="4"  width="34" height="34" rx="5" fill="#F97316"/>
+  <rect x="43" y="4"  width="34" height="34" rx="5" fill="#FACC15"/>
+  <rect x="82" y="4"  width="34" height="34" rx="5" fill="#22C55E"/>
+  <!-- Row 2 -->
+  <rect x="4"  y="43" width="34" height="34" rx="5" fill="#06B6D4"/>
+  <rect x="43" y="43" width="34" height="34" rx="5" fill="#3B82F6"/>
+  <rect x="82" y="43" width="34" height="34" rx="5" fill="#8B5CF6"/>
+  <!-- Row 3 (partial — matches rubiscape icon style) -->
+  <rect x="4"  y="82" width="34" height="34" rx="5" fill="#EC4899"/>
+  <rect x="43" y="82" width="34" height="34" rx="5" fill="#14B8A6"/>
+  <rect x="82" y="82" width="34" height="34" rx="5" fill="#F59E0B"/>
+</svg>

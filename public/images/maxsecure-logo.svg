@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
+  <!-- Max Secure red shield with M/checkmark -->
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444"/>
+      <stop offset="100%" style="stop-color:#991B1B"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC2626"/>
+      <stop offset="100%" style="stop-color:#7F1D1D"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield outline (darker, for depth) -->
+  <path d="M60 8 L108 28 L108 72 Q108 110 60 132 Q12 110 12 72 L12 28 Z"
+        fill="#7F1D1D" opacity="0.4"/>
+  <!-- Shield body -->
+  <path d="M60 4 L106 24 L106 70 Q106 110 60 130 Q14 110 14 70 L14 24 Z"
+        fill="url(#shieldGrad)"/>
+  <!-- Shield highlight (top-left glare) -->
+  <path d="M60 4 L106 24 L106 52 Q80 48 60 30 Q40 48 14 52 L14 24 Z"
+        fill="white" opacity="0.08"/>
+  <!-- Silver inner border -->
+  <path d="M60 14 L100 31 L100 70 Q100 104 60 122 Q20 104 20 70 L20 31 Z"
+        fill="none" stroke="#C0C0C0" stroke-width="2" opacity="0.5"/>
+  <!-- White M + checkmark shape -->
+  <!-- M letter with integrated checkmark -->
+  <g transform="translate(60,72)" fill="white">
+    <!-- Left leg of M -->
+    <rect x="-28" y="-28" width="9" height="48" rx="3"/>
+    <!-- Right leg of M -->
+    <rect x="19" y="-28" width="9" height="48" rx="3"/>
+    <!-- Left diagonal of M (top-left to center) -->
+    <polygon points="-28,-28 -19,-28 0,-4 -9,-4" />
+    <!-- Right diagonal of M (top-right to center) -->
+    <polygon points="19,-28 28,-28 9,-4 0,-4" />
+    <!-- Checkmark stroke (bottom, going up-right) -->
+    <path d="M -18 18 L -5 32 L 24 -2" fill="none" stroke="white" stroke-width="8"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
